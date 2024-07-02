@@ -1,18 +1,18 @@
 @import url("styles/banner.css");
 :root {
+  @import url("styles/carrossel.css")
   --cor-de-fundo: #ebecee;
   --branco: #ffffff;
   --laranja: #eb9b00;
   --azul-degrade: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
   --fonte-principal: "Poppins";
 }
-
-    body {
-      background-color: var(--cor-de-fundo);
-      font-family: var(--fonte-principal);
-      font-size: 16px;
-      font-weight: 400;
-  }
+.body {
+  background-color: var(--cor-de-fundo);
+  font-family: var(--fonte-principal);
+  font-size: 16px;
+  font-weight: 400;
+}
 h1 {
   background-color: white;
 }
@@ -33,8 +33,15 @@ h1 {
   display: none;
   position: absolute;
   top: 100%;
+  width: 60vw;
+  border-radius: 0 0 20px 20px;
+  background-color: var(--branco);
+}
+
+.lista-menu__titulo,
+.lista-menu__item {
+  padding: 1em;
 }
 .container__botao:checked ~ .lista-menu {
   display: block;
 }
-border-radius: 0 0 20px 20px;

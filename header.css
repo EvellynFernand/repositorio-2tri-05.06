@@ -1,4 +1,4 @@
-@import url("styles/header.css");
+
 .lista-menu_titulo, 
 .lista-menu_item {
     padding: 1em,
@@ -35,3 +35,4 @@
   }  
 .container__botao {
     display: none
+  }
